@@ -17,6 +17,15 @@ var kittySchema = mongoose.Schema({
     name: String //a schema with property, name, which will be a String.
 });
 
+// add "speak" functionality to our documents:
+// NOTE: methods must be added to the schema before compiling it with mongoose.model()
+kittySchema.methods.speak = function () {
+  var greeting = this.name
+    ? "Meow name is " + this.name
+    : "I don't have a name";
+  console.log(greeting);
+}
+
 // compile the schema into a Model.
 var Kitten = mongoose.model('Kitten', kittySchema);
 

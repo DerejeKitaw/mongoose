@@ -1,0 +1,25 @@
+{
+  "name": "mongoose",
+  "version": "1.0.0",
+  "description": "\"# mongoose\" \r This reepo is to keep all of my old notes together.",
+  "main": "getting-started.js",
+  "dependencies": {
+    "async": "*",
+    "mongoose": "^4.9.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DerejeKitaw/mongoose.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DerejeKitaw/mongoose/issues"
+  },
+  "homepage": "https://github.com/DerejeKitaw/mongoose#readme"
+}

@@ -14,5 +14,8 @@ db.once('open', function() {
 
 // define kitten schema
 var kittySchema = mongoose.Schema({
-    name: String
+    name: String //a schema with property, name, which will be a String.
 });
+
+// compile the schema into a Model.
+var Kitten = mongoose.model('Kitten', kittySchema);

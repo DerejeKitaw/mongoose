@@ -50,4 +50,4 @@ Kitten.find(function (err, kittens) {
 
 
 //  filter our kittens by name
-Kitten.find({ name: /^fluff/ }, callback);
+// Kitten.find({ name: /^fluff/ }, callback);

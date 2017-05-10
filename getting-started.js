@@ -19,3 +19,8 @@ var kittySchema = mongoose.Schema({
 
 // compile the schema into a Model.
 var Kitten = mongoose.model('Kitten', kittySchema);
+
+// create a kitten document representing the little guy we just met on the sidewalk outside:
+
+var silence = new Kitten({ name: 'Silence' });
+console.log(silence.name); // 'Silence'

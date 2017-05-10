@@ -30,6 +30,24 @@ kittySchema.methods.speak = function () {
 var Kitten = mongoose.model('Kitten', kittySchema);
 
 // create a kitten document representing the little guy we just met on the sidewalk outside:
-
 var silence = new Kitten({ name: 'Silence' });
 console.log(silence.name); // 'Silence'
+
+var fluffy = new Kitten({ name: 'fluffy' });
+fluffy.speak(); // "Meow name is fluffy"
+
+// Save kittens
+fluffy.save(function (err, fluffy) {
+  if (err) return console.error(err);
+  fluffy.speak();
+});
+
+// display all the kittens
+Kitten.find(function (err, kittens) {
+  if (err) return console.error(err);
+  console.log(kittens);
+})
+
+
+//  filter our kittens by name
+Kitten.find({ name: /^fluff/ }, callback);

@@ -1,0 +1,7 @@
+{
+    "name": "String",
+    "age": "Number",
+    "birthday": "Date",
+    "gender": "String",
+    "likes": ["String"]
+}

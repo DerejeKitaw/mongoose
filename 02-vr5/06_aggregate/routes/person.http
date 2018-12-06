@@ -1,0 +1,60 @@
+POST http://localhost:3000/api/v1/persons HTTP/1.1
+content-type: application/json
+
+{
+    "name": "bill",
+    "age": 25,
+    "birthday": "{{$timestamp}}",
+    "gender": "Male",
+    "likes": ["movies", "games", "dogs"]
+  }
+
+###
+POST http://localhost:3000/api/v1/persons HTTP/1.1
+content-type: application/json
+
+{
+    "name": "mary",
+    "age": 30,
+    "birthday": "{{$timestamp}}",
+    "gender": "Female",
+    "likes": ["movies", "birds", "cats"]
+  }
+###
+POST http://localhost:3000/api/v1/persons HTTP/1.1
+content-type: application/json
+
+{
+    "name": "bob",
+    "age": 21,
+    "birthday": "{{$timestamp}}",
+    "gender": "Male",
+    "likes": ["tv", "games", "rabbits"]
+  }
+###
+###
+POST http://localhost:3000/api/v1/persons HTTP/1.1
+content-type: application/json
+
+{
+    "name": "lilly",
+    "age": 26,
+    "birthday": "{{$timestamp}}",
+    "gender": "Female",
+    "likes": ["books", "cats", "dogs"]
+  }
+###
+POST http://localhost:3000/api/v1/persons HTTP/1.1
+content-type: application/json
+
+{
+    "name": "alucard",
+    "age": 1000,
+    "birthday":"{{$timestamp}}" ,
+    "gender": "Male",
+    "likes": ["glasses", "wine", "the night"]
+  }
+###
+GET http://localhost:3000/api/v1/persons HTTP/1.1
+###
+GET http://localhost:3000/api/v1/persons/all HTTP/1.1

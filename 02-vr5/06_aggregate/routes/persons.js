@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Person } = require('../model/person');
 
 router.get('/', async (req, res) => {
-  const persons = await Person.find();
+  const persons = await Person.find({},{"__v":0,"_id":0}).lean();
   res.send(persons);
 });
 // run an aggregate query that will get all of the people who like a given
@@ -31,7 +31,7 @@ router.get('/all', async (req, res) => {
   } catch (ex) {
     res.status(500).send(ex);
   }
-  res.send(persons);
+  // res.send(persons);
 });
 
 router.post('/', async (req, res) => {

@@ -1,11 +1,11 @@
 {
   "name": "mongoose",
   "version": "1.0.0",
-  "description": "\"# mongoose\" \r This reepo is to keep all of my old notes together.",
+  "description": "\"# mongoose\" \r This repo is to keep all of my old notes together.",
   "main": "getting-started.js",
   "dependencies": {
     "async": "*",
-    "mongoose": "^4.9.8"
+    "mongoose": "^5.4.18"
   },
   "devDependencies": {},
   "scripts": {
